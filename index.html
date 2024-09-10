@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Finance Savings</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header>
+    <h1>Saving Calculator</h1>
+    <div id="language-switcher">
+      <label for="language">Choose Language:</label>
+      <select id="language" onchange="changeLanguage()">
+        <option value="en">English</option>
+        <option value="hi">Hindi</option>
+        <option value="ta">Tamil</option>
+        <option value="kn">Kannada</option>
+      </select>
+    </div>
+  </header>
+
+  <main>
+    <section id="calculator">
+      <h2>Enter Your Income and Expenses</h2>
+      <form id="finance-form">
+        <label for="income">Income:</label>
+        <input type="number" id="income" placeholder="Enter your income" required>
+
+        <label for="expenses">Expenses:</label>
+        <input type="number" id="expenses" placeholder="Enter your expenses" required>
+
+        <button type="submit">Get Saving Suggestion</button>
+      </form>
+
+      <div id="suggestion"></div>
+    </section>
+
+    <section id="quotes-popup">
+      <div id="quote"></div>
+    </section>
+  </main>
+
+  <script src="scripts.js"></script>
+</body>
+</html>
